@@ -18,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "pregql-codegen": "apollo-codegen introspect-schema schema.graphql --output schema.json",
+    "gql-codegen": "apollo-codegen generate --schema schema.json src/**/*.graphql --target typescript --output src/operation-result-types.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "apollo-codegen": "^0.20.2"
   }
 }
