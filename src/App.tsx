@@ -5,7 +5,10 @@ import ApolloClient from 'apollo-boost'
 import {ApolloProvider} from '@apollo/react-hooks';
 
 const client = new ApolloClient({
-  uri: "https://api.github.com/graphql"
+  uri: "https://api.github.com/graphql",
+  headers: {
+    Authorization: "Bearer "
+  }
 })
 
 function App() {
