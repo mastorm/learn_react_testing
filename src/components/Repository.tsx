@@ -9,7 +9,11 @@ const Repository: FC<RepositoryProps> = ({ repo }) => {
   return (
     <div>
       <h4>{repo.name}</h4>
-      <img src={repo.openGraphImageUrl} />
+      <img
+        data-testid={"repo-img"}
+        alt={`Preview image of ${repo.name}`}
+        src={repo.openGraphImageUrl}
+      />
     </div>
   );
 };
