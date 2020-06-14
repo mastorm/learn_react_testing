@@ -20,8 +20,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "pregql-codegen": "apollo-codegen introspect-schema schema.graphql --output schema.json",
-    "gql-codegen": "apollo-codegen generate --schema schema.json src/**/*.graphql --target typescript --output src/operation-result-types.ts",
     "apollogen": "apollo client:codegen --target typescript",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "apollo": "^2.28.3"
+    "apollo": "^2.28.3",
+    "prettier": "^2.0.5"
   }
 }
